@@ -1,30 +1,30 @@
-# React + TypeScript + Vite
+# Weekday JobSearch Extension
+#Overview
+This project is a candidate application platform created as part of a frontend interview assignment. It allows users to view job listings, filter jobs based on various criteria, and implement infinite scroll for a seamless browsing experience.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+Job Listings: View job listings with detailed information.
+Filters: Refine job listings based on criteria such as experience, company name, location, etc.
+Infinite Scroll: Load additional job listings as the user scrolls down.
+Responsive Design: Optimized for various screen sizes.
 
-Currently, two official plugins are available:
+Installation
+Clone the repository:
+git clone <repository_url>
+Navigate to the project directory:
+cd xyz
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Install dependencies:
+npm install
 
-## Expanding the ESLint configuration
+Start the development server:
+npm run dev
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Additional Notes
+Handle null values appropriately in the API response.
+Filters should be applied on the frontend without calling additional APIs.
+Prefer vanilla CSS over Tailwind for styling
 
-- Configure the top-level `parserOptions` property like this:
+Contact Information
+For any inquiries or assistance, please contact khandurikishor4@gmail.com.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
