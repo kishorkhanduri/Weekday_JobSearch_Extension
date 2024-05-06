@@ -1,0 +1,105 @@
+.jobCard {
+  width: 350px;
+  height: 553px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 4px 0px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+.jobCard .jobCardContainer .jobCardCompany {
+  display: flex;
+  align-items: center;
+  height: 58px;
+  margin: 10px;
+}
+.jobCard .jobCardContainer .jobCardCompany .jobCardCompanyLogo {
+  height: 40px;
+  border-radius: 5px;
+}
+.jobCard .jobCardContainer .jobCardCompany .jobCardCompanyText {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+.jobCard .jobCardContainer .jobCardCompany .jobCardCompanyText .jobCardCompanyName {
+  color: #8b8b8b;
+}
+.jobCard .jobCardContainer .jobCardCompany .jobCardCompanyText .jobCardJobRole {
+  font-weight: 200;
+}
+.jobCard .jobCardContainer .jobCardCompany .jobCardCompanyText .jobCardLocation {
+  font-weight: 300;
+}
+.jobCard .jobCardContainer .jobCardSalary {
+  font-weight: 200;
+  margin: 10px;
+}
+.jobCard .jobCardContainer .jobCardAboutCompanyLabel {
+  margin: 10px;
+}
+.jobCard .jobCardContainer .jobCardAboutCompany {
+  height: 240px;
+  overflow-y: hidden;
+  font-weight: 300;
+  margin: 10px;
+  -webkit-mask-image: linear-gradient(180deg, #000 60%, transparent);
+}
+.jobCard .jobCardContainer .jobCardViewJob {
+  position: relative;
+  top: -45px;
+  display: flex;
+  width: 330px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #4943da;
+  font-weight: 300;
+}
+.jobCard .jobCardContainer .jobCardExperienceFlex {
+  height: 50px;
+}
+.jobCard .jobCardContainer .jobCardExperienceFlex .jobCardExperienceLabel {
+  margin: 10px;
+  margin-top: 0px;
+}
+.jobCard .jobCardContainer .jobCardExperienceFlex .jobCardExperience {
+  margin: 10px;
+  margin-top: 0px;
+}
+.jobCard .jobCardContainer .jobCardEasyApply {
+  width: 320px;
+  height: 44px;
+  background-color: rgb(85, 239, 196);
+  border-style: none;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+.jobCard .jobCardContainer .jobCardEasyApply:hover {
+  cursor: pointer;
+}
+
+.jobCardEasyApply{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+}
+.applyicon{
+  color: rgb(199, 165, 11);
+  margin-right: 5px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .jobCard {
+    width: 100%;
+  }
+
+  .redCrossButton {
+    font-size: 18px; /* Increase font size for better visibility */
+  }
+}

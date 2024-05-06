@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": "Weekday JobSearch Extension",
+  "description": "Weekday JobSearch Extension clone",
+  "background": {
+    "service_worker": "background.bundle.js"
+  },
+  "permissions": [
+    "tabs",
+    "background",
+    "activeTab"
+  ],
+  "action": {
+    "default_icon": "weekday1.png"
+  },
+  "icons": {
+    "weekday2": "weekday2.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*",
+        "<all_urls>"
+      ],
+      "js": [
+        "contentScript.bundle.js"
+      ],
+      "css": [
+        "content.styles.css"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "content.styles.css",
+        "weekday2.png",
+        "weekday1.png"
+      ],
+      "matches": []
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+.jobCards {
+  margin-top: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;  
+}
+
+/* Hide scrollbar */
+.jobCards::-webkit-scrollbar {
+  display: none;
+}
+
+/* Flex container for job cards */
+.jobCards .jobCardsFlex {
+   display: flex;
+  width: 90vw;
+  padding: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+  overflow-y: auto;
+  height: 80vh;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .jobCards {
+    margin-top: 215px;  
+  }
+  .jobCards .jobCardsFlex {
+    width: 100%;
+  }
+}
+  

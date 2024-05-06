@@ -1,0 +1,25 @@
+.container {
+  background-color: white;
+  margin: 0;
+}
+.container .Header {
+  font-size: 18px;
+  font-weight: 300;
+  width: 100vw;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.container .Header .jobsCount {
+  background-color: #1976D2;
+  color: white;
+  font-weight: 400;
+  padding: 6px;
+  border-radius: 13px;
+  position: relative;
+  font-size: 0.75rem;
+  top: -12px;
+}

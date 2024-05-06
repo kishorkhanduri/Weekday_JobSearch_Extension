@@ -1,0 +1,31 @@
+.Filter .dropdownFilter {
+  width: 14vw;
+  min-width: 140px;
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.redCrossButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: red;
+}
+
+.redCrossButton:hover {
+  color: darkred;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .Filter .dropdownFilter {
+   font-size: 10px;
+   width: 100%;
+  }
+
+  .redCrossButton {
+    font-size: 18px; /* Increase font size for better visibility */
+  }
+}
